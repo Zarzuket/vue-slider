@@ -11,18 +11,19 @@
 <body>
     
     <div id="root">
+        <h1><span class="eu_2020">EUROPEI 2020</span> <span class="ita_green">IT'S</span> <span class="ita_white">COMING</span> <span class="ita_red">HOME?!?!</span></h1>
         <div class="container">
                 <div>
-                    <i class="far fa-arrow-alt-circle-left"></i>
+                    <i class="far fa-arrow-alt-circle-left" @click="pre_img()"></i>
                 </div>
                 <div class="container_foto">
-                    <img src="" alt="">
+                    <img :src="images[imageIndex]" alt="">
                     <div class="carosel_bullets">
-                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle" v-for="(image,index) in images" :class="imageIndex == index ? 'active' : ''" @click="currentImage(index)" ></i>
                     </div>
                 </div>
                 <div>
-                    <i class="far fa-arrow-alt-circle-right"></i>
+                    <i class="far fa-arrow-alt-circle-right" @click="next_img()"></i>
                 </div>
         </div>
     </div>

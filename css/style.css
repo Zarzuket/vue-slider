@@ -4,19 +4,46 @@
     margin: 0;
 }
 
+body{
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.eu_2020{
+    color: blue;
+}
+
+.ita_green{
+    color: green;
+}
+.ita_white{
+    color: white;
+}
+.ita_red{
+    color: red;
+}
 
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
 }
 .container_foto{
-    height: 300px;
-    width: 300px;
-    background-color: red;
+    height: 500px;
+    width: 500px;
     display: flex;
     position: relative;
 
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
 }
 
 .carosel_bullets{
@@ -31,11 +58,16 @@
 
 .fa-circle{
     color: lightseagreen;
+    margin: 5px;
 
+}
+
+.active{
+    color: red;
 }
 
 .fa-arrow-alt-circle-left,
 .fa-arrow-alt-circle-right{
     color: lightsalmon;
-    font-size: 30px;
+    font-size: 50px;
 }
